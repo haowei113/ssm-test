@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/css1.css">
+    <script src="https://cdn.staticfile.org/vue/2.7.0/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+<script>
+    function get()
+    {
+        axios({
+            method:"get",
+            url:"http://localhost:63342/t1/src/main/webapp/pages/html1.html"
+        }).then(result=>{document.write(result.data)})
+    }
+
+</script>
+<!--<div id="app">-->
+<!--    <input type="button" @click="f1()">-->
+<!--</div>-->
+<!--<script>-->
+<!--    new Vue({-->
+<!--        el: '#app',-->
+<!--        data: {-->
+<!--            message:"aaa"-->
+<!--        },-->
+<!--        methods:{-->
+<!--            f1:function(){-->
+<!--                alert(this.message)-->
+<!--            }-->
+<!--        }-->
+<!--    })-->
+<!--</script>-->
+</body>
+</html>
